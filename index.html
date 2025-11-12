@@ -6,22 +6,25 @@
     <title>Document</title>
 </head>
 <body>
+    <div class="container">
     <h1>Gerenciador de tarefas</h1>
+
     <link rel="stylesheet" href="/style.css">
 
-    <form>
-        <input type="text" placeholder="digite uma tarefa"
+    <form id="task-form">
+        <input id="title" type= "text" placeholder=" digite uma tarefa"
         required>
-        <input type="text" placeholder="descriçao da tarefa">
-        <button>Enviar</button>
-
+        <input id="description" type ="text" placeholder="descrição da tarefa">
+        <button type="submit">enviar</button>
     </form>
 
-    <ul>
+    <ul id="task-list">
 
     </ul>
+    </div>
 
+    
 
-
+   <script src="script.js"></script>
 </body>
 </html>
