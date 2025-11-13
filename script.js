@@ -72,9 +72,35 @@ try {
 
 } catch (error) {
     alert("Erro ao atualizar a tarefa"+ error.message);
-    
-}
 
 }
+}
+
+async function deleteTask(id ){
+    try {
+        await fetch(`${apiUrl}/${id}`, {
+            method: 'DELETE'
+
+        });
+        loadTasks();
+        
+    } catch (error) {
+        alert("Erro ao excluir tarefa: "+ error.message);
+        
+    }
+}
+loadTasks();
+
+
+
+
+
+
+
+
+
+
+
+
 
 
